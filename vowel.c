@@ -3,13 +3,19 @@
 void main()
 {
  char c;
- scanf("%c",&c);
- if('A'==c || 'E'==c || 'I'==c || 'O'==c || 'U'==c || 'a'==c || 'e'==c || 'i'==c || 'o'==c || 'u'==c)
- {
-   printf("vowele");
-   }
-   else
-   {
-   printf("consonant");
-   }
-   }
+  int isLowercaseVowel, isUppercaseVowel;
+ do {
+       scanf(" %c", &c);
+    }
+    while (!isalpha(c));
+    isLowercaseVowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    isUppercaseVowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+    if (isLowercaseVowel || isUppercaseVowel)
+    {
+        printf("vowel");
+    }
+     else
+     {
+        printf("consonant");
+      }
+}
