@@ -10,6 +10,6 @@ void main()
   }
   else
   {
-     printf("alphabet");
+     printf(" not an alphabet");
   }  
 }
